@@ -1,10 +1,10 @@
 import java.time.LocalDateTime;
 
 public class Bus implements Runnable{
-    private int busNumber;
+    private BoardingArea boardingArea;
 
-    public Bus(int busNumber) {
-        this.busNumber = busNumber;
+    public Bus(BoardingArea boardingArea) {
+        this.boardingArea = boardingArea;
     }
     @Override
     public void run() {
@@ -13,7 +13,7 @@ public class Bus implements Runnable{
 
     // Bus depart from the boarding area
     public void depart() {
-        System.out.printf("Bus Number: %d is departing at %s",  busNumber, LocalDateTime.now().toString());
+        System.out.printf("Bus Number: %d is departing at %s",  1, LocalDateTime.now().toString());
     }
 
 
